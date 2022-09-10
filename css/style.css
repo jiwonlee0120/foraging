@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  row-gap: unset;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+}
+
+@media (min-width: 300px) {
+  header {
+    height: 10vh;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  nav {
+    width: 40%;
+  }
+  nav > ul {
+    display: none;
+  }
+  details {
+    position: relative;
+    width: 100%;
+  }
+  details > summary {
+    font-size: 28px;
+  }
+  details ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 70%;
+    padding: 0;
+    z-index: 1;
+  }
+  details li {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1px solid white;
+  }
+  details a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+  }
+  .carousel-inner h5 {
+    font-size: 28px;
+  }
+  .carousel-inner p {
+    margin: 0;
+  }
+  .carousel-inner aside {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+  }
+  .carousel-inner > .carousel-item:first-child aside {
+    background-image: url(/img/carousel-01.jpg);
+  }
+  .carousel-inner > .carousel-item:nth-child(2) aside {
+    background-image: url(/img/carousel-02.jpg);
+  }
+  .carousel-inner > .carousel-item:last-child {
+    background-image: url(/img/carousel-03.jpg);
+  }
+  .carousel-inner .carousel-caption {
+    display: block !important;
+    margin-bottom: 25%;
+  }
+  .contents {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+  }
+  .contents aside {
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contents a {
+    text-decoration: none;
+    border: 3px solid whitesmoke;
+    border-radius: 50px;
+    padding: 3%;
+    color: whitesmoke;
+  }
+  .contents p {
+    width: 85%;
+  }
+  .berries {
+    background-color: #1A4D2E;
+    height: 80vh;
+    color: whitesmoke;
+  }
+  .berries aside {
+    background-image: url(/img/berries.jpg);
+  }
+  .berries > article {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 2vh;
+  }
+  .mushrooms {
+    background-color: #464E2E;
+    height: 80vh;
+    color: whitesmoke;
+  }
+  .mushrooms aside {
+    background-image: url(/img/mushroom.jpg);
+  }
+  .mushrooms > article {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 2vh;
+  }
+  .plants {
+    background-color: #ACB992;
+    height: 80vh;
+    color: whitesmoke;
+  }
+  .plants aside {
+    background-image: url(/img/plant.jpg);
+  }
+  .plants > article {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 2vh;
+  }
+  .about {
+    background-color: #E9E5D6;
+  }
+  .about aside {
+    width: 100%;
+    height: 40vh;
+    background-image: url(/img/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about div {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .about i {
+    font-size: 24px;
+  }
+  .about section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+  }
+  .about span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .about p {
+    width: 70%;
+    margin: 0;
+  }
+  .contact {
+    background-color: #E9E5D6;
+  }
+  .contact aside {
+    width: 100%;
+    height: 40vh;
+    background-image: url(/img/location.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contact div {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 2vh;
+    width: 100%;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    width: 100%;
+  }
+  .contact form > input, .contact form textarea {
+    padding: 2%;
+    border: 1px solid whitesmoke;
+    width: 100%;
+  }
+  .contact form textarea {
+    height: 25vh;
+    resize: none;
+  }
+  .contact p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  [type=submit] {
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 3%;
+    color: black;
+  }
+  footer {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4vh;
+  }
+  footer aside {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  footer i {
+    font-size: 20px;
+  }
+}
+@media (min-width: 700px) {
+  header h1 {
+    font-size: 38px;
+  }
+  details > summary {
+    font-size: 40px;
+  }
+  details a {
+    font-size: 26px;
+  }
+  nav {
+    width: 50%;
+  }
+  .carousel-inner {
+    height: 60vh;
+  }
+  .carousel-inner h5 {
+    font-size: 36px;
+  }
+  .carousel-inner p {
+    font-size: 24px;
+  }
+  .carousel-inner aside {
+    height: 60vh;
+  }
+  .carousel-inner .carousel-caption {
+    margin-bottom: 20%;
+  }
+  .contents > article {
+    display: flex;
+    height: 55vh;
+  }
+  .contents > article > article {
+    width: 90%;
+  }
+  .contents aside {
+    height: 100%;
+    width: 100%;
+  }
+  .contents h1 {
+    font-size: 40px;
+  }
+  .contents p {
+    font-size: 22px;
+  }
+  .mushrooms {
+    flex-direction: row-reverse;
+  }
+  .about {
+    height: 60vh;
+  }
+  .about > article {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100%;
+  }
+  .about aside {
+    height: 100%;
+    width: 100%;
+  }
+  .about div {
+    width: 100%;
+    height: 80%;
+  }
+  .about i {
+    font-size: 26px;
+  }
+  .about p {
+    font-size: 18px;
+  }
+  .about section {
+    display: flex;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .about h2 {
+    font-size: 30px;
+  }
+  .about span {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .contact h2 {
+    font-size: 40px;
+  }
+  .contact p {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .contact div {
+    row-gap: 0;
+  }
+  .contact form {
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  [type=submit] {
+    width: 30% !important;
+  }
+  footer {
+    height: 20vh;
+    row-gap: 2vh;
+  }
+  footer i {
+    font-size: 26px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    height: 8vh;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  header details {
+    display: none;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  nav {
+    width: 50%;
+  }
+  nav > ul {
+    width: 80%;
+    display: flex;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  nav a {
+    padding: 3% 5%;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  nav a:hover {
+    transition: 0.4s;
+    color: whitesmoke;
+    background-color: #1A4D2E;
+  }
+  .carousel-inner h5 {
+    font-size: 44px;
+  }
+  .carousel-inner p {
+    font-size: 26px;
+  }
+  .carousel-inner aside {
+    background-repeat: no-repeat;
+  }
+  .carousel-inner .carousel-caption {
+    margin-bottom: 10%;
+  }
+  .contents > article {
+    display: flex;
+    height: 70vh;
+  }
+  .contents aside {
+    height: 100%;
+    width: 100%;
+  }
+  .contents h1 {
+    font-size: 40px;
+  }
+  .contents p {
+    font-size: 26px;
+  }
+  .contents a {
+    font-size: 22px;
+    padding: 2%;
+  }
+  .about {
+    height: 65vh;
+  }
+  .about > article {
+    height: 100%;
+  }
+  .about > article > div {
+    width: 70%;
+  }
+  .about aside {
+    width: 80%;
+    height: 100%;
+  }
+  .about i {
+    font-size: 34px;
+  }
+  .about p {
+    font-size: 24px;
+    width: 60%;
+  }
+  .about section {
+    padding-top: 3%;
+  }
+  .about h2 {
+    font-size: 40px;
+  }
+  .about span {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .contact {
+    height: 75vh;
+  }
+  .contact > article {
+    display: flex;
+    height: 100%;
+  }
+  .contact aside {
+    width: 100%;
+    height: 100%;
+  }
+  .contact h2 {
+    font-size: 40px;
+  }
+  .contact p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .contact div {
+    row-gap: 0;
+    width: 90%;
+  }
+  .contact form {
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .contact [type=submit] {
+    border: 3px solid whitesmoke;
+  }
+  footer {
+    height: 25vh;
+  }
+  footer i {
+    font-size: 32px;
+  }
+  footer p {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,299 @@
+@media(min-width: 300px) {
+    header{
+        height: 10vh;
+        padding: 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+        
+        h1 {
+            margin: 0;
+        }
+    }
+
+    nav {
+        width: 40%;
+
+        > ul {
+            display: none;
+        }
+    }
+
+    details {
+        position: relative;
+        width: 100%;
+
+        > summary {
+            font-size: 28px;
+        }
+
+        ul {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            width: 70%;
+            padding: 0;
+            z-index: 1;
+        }
+
+        li {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-bottom: 0.1px solid white;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 1%;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10vh;
+    }
+
+    .carousel-inner {
+
+        h5 {
+            font-size: 28px;
+        }
+        
+        p {
+            margin: 0;
+        }
+
+        aside {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 60vh;
+        }
+
+        > .carousel-item:first-child {
+            aside {
+                background-image: url(/img/carousel-01.jpg);
+            }
+        }
+        > .carousel-item:nth-child(2) {
+            aside {
+                background-image: url(/img/carousel-02.jpg);
+            }
+        }
+        > .carousel-item:last-child {
+            background-image: url(/img/carousel-03.jpg);
+        }
+
+        .carousel-caption {
+            display: block !important;
+            margin-bottom: 25%;
+        }
+    }
+
+    .contents {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10vh;
+
+        aside {
+            width: 100%;
+            height: 40vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+            border: 3px solid whitesmoke;
+            border-radius: 50px;
+            padding: 3%;
+            color: whitesmoke;
+        }
+        p {
+            width: 85%;
+        }
+    }
+
+    .berries {
+        background-color: $firstColor;
+        height: 80vh;
+        color: whitesmoke;
+
+        aside {
+            background-image: url(/img/berries.jpg);
+        }
+
+        > article {
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            row-gap: 2vh;
+        }
+    }
+    
+    .mushrooms {
+        background-color: $secondColor;
+        height: 80vh;
+        color: whitesmoke;
+
+        aside {
+            background-image: url(/img/mushroom.jpg);
+        }
+
+        > article {
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            row-gap: 2vh;
+        }
+    }
+    
+    .plants {
+        background-color: $thirdColor;
+        height: 80vh;
+        color: whitesmoke;
+        
+        aside {
+            background-image: url(/img/plant.jpg);
+        }
+
+        > article {
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            row-gap: 2vh;
+        }
+    }
+
+    .about {
+        background-color: $fourthColor;
+        
+        aside {
+            width: 100%;
+            height: 40vh;
+            background-image: url(/img/about.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        div {
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        i {
+            font-size: 24px;
+        }
+        
+        section {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10%;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        p {
+            width: 70%;
+            margin: 0;
+        }
+    }
+
+    .contact {
+        background-color: $fourthColor;
+
+        aside {
+            width: 100%;
+            height: 40vh;
+            background-image: url(/img/location.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div {
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            row-gap: 2vh;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vh;
+            width: 100%;
+
+            > input,textarea {
+                padding: 2%;
+                border: 1px solid whitesmoke;
+                width: 100%;
+            }
+
+            textarea {
+                height: 25vh;
+                resize: none;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+    }
+    
+    [type=submit] {
+        background-color: transparent;
+        border-radius: 50px;
+        padding: 3%;
+        color: black;
+    }
+
+    footer {
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 4vh;
+
+        aside {
+            display: flex;
+            column-gap: 3vh;
+        }
+        
+        i {
+            font-size: 20px;
+        }
+    }
+}

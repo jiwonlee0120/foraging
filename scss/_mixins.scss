@@ -1,0 +1,53 @@
+// @mixin flexbox {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+@mixin flexColumn(
+  $rowGap : unset
+) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $rowGap;
+}
+
+@mixin flexRow(
+  $columnGap : unset
+){
+  display: flex;
+  flex-direction: row;
+  column-gap: $columnGap;
+}
+
+@mixin flexWrap(
+  $columnGap : unset,
+  $rowGap : unset
+){
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: $columnGap;
+  row-gap: $rowGap;
+}
+
+@mixin defaultLi {
+  display: flex;
+  width: 100%;
+}
+
+@mixin defaultA (
+  $width : unset,
+  $padding : unset
+){
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  width: $width;
+  padding: $padding;
+}
+
+@mixin  Bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

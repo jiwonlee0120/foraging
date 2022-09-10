@@ -1,0 +1,107 @@
+@media (min-width: 700px) {
+ 
+    header {
+
+        h1 {
+            font-size: 40px;
+        }
+     
+        nav {
+            width: 40%;
+       
+            details {
+              > summary {
+                  font-size: 40px;
+                  padding-left: 5vh;
+              }
+             
+              a {
+                  font-size: 24px;
+              }
+            }
+     
+        }
+    }
+ 
+    main {
+        width: 100%;
+        row-gap: 1vh;
+ 
+        .gallery{
+            width: 100%;
+            aside {
+            height: 25vh;
+            width: 25vh;
+            }
+        }
+ 
+        > section {
+            @include flexRow(5vh);
+            width: 80%;
+            padding: 2%;
+ 
+            > figure {
+                @include flexColumn(1vh);
+
+                aside{
+                    width: 30vh;
+                    height: 30vh;
+                }
+            }
+ 
+            > article {
+                padding: 2%;
+                width: 60%;
+
+            }
+        }
+
+        .second {
+            flex-direction: row-reverse;
+        }
+ 
+        .recipe {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+ 
+            > figure {
+                padding-top: 5%;
+ 
+                > aside {
+                    height: 30vh;
+                    width: 30vh;
+                }
+            }
+ 
+            p {
+                text-align: center;
+            }
+ 
+            td {
+                padding: 0;
+            }
+ 
+            > article {
+                padding: 0;
+ 
+                p {
+                    padding: 0;
+                    line-height: 1;
+                }
+            }
+    
+        }
+        
+        > details {
+
+            summary {
+                padding-top: 3vh;
+            }
+ 
+            p {
+                background-color: white;
+            }
+        }
+    }
+
+}

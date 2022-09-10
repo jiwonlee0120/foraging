@@ -1,0 +1,177 @@
+@media (min-width:1000px){
+    header {
+        height: 8vh;
+        display: flex;
+        flex-direction: row-reverse;
+        details {
+            display: none;
+        } 
+    }
+    h1 {
+        font-size: 42px;
+    }
+
+    nav {
+        width: 50%;
+        > ul {
+            width: 80%;
+            display: flex;
+            column-gap: 2vh;
+            margin: 0;
+            list-style-type: none;
+            justify-content: space-between;
+        }
+
+        a {
+            padding: 3% 5%;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            text-transform: uppercase;
+
+            &:hover {
+                transition: .4s;
+                color: whitesmoke;
+                background-color: $firstColor;
+            }
+        }
+
+        
+    }
+
+    .carousel-inner {
+
+        h5 {
+            font-size: 44px;
+        }
+    
+        p {
+            font-size: 26px;
+        }
+
+        aside {
+            background-repeat: no-repeat;
+        }
+
+        .carousel-caption {
+            margin-bottom: 10%;
+        }
+    }
+
+    .contents {
+
+        > article {
+            display: flex;
+            height: 70vh;
+            
+        }
+
+        aside {
+            height: 100%;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 26px;
+        }
+
+        a {
+            font-size: 22px;
+            padding: 2%;
+        }
+    }
+
+    .about {
+        height: 65vh;
+
+        >article {
+            height: 100%;
+        
+            > div {
+                width: 70%;
+            }
+        }
+
+        aside {
+            width: 80%;
+            height: 100%;
+        }
+
+        i {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 24px;
+            width: 60%;
+        }
+
+        section {
+            padding-top: 3%;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        span {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    .contact {
+        height: 75vh;
+        > article {
+            display: flex;
+            height: 100%;
+        }
+
+        aside {
+            width: 100%;
+            height: 100%;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        div {
+            row-gap: 0;
+            width: 90%;
+        }
+
+        form {
+            padding-top: 2vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+        }
+
+        [type="submit"] {
+            border: 3px solid whitesmoke;
+        }
+    }
+
+    footer {
+        height: 25vh;
+
+        i {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+}

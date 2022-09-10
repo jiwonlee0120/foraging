@@ -1,0 +1,116 @@
+@media (min-width: 1000px) {
+
+    header {
+        height: 10vh;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 5vh;
+        details {
+            display: none;
+        }
+
+        h1 {
+            font-size: 42px;
+        }
+    }
+
+    nav {
+
+        width: 100%;
+    
+        > ul {
+            width: 100%;
+            display: flex;
+            margin: 0;
+            list-style-type: none;
+            justify-content: center;
+            text-align: center;
+            column-gap: 5vh;
+        }
+
+        a {
+            padding: 3%;
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $firstColor;
+            }
+        }
+    }
+
+    main {
+
+        row-gap: 5vh;
+
+        > section {
+            column-gap: 20vh;
+            width: 80%;
+            padding: 3%;
+ 
+            > figure {
+                column-gap: 3vh;
+            }
+
+            > article {
+                div {
+                    width: 80%;
+                    font-size: 22px;
+                }
+            }
+
+        }
+
+        .gallery {
+
+            figure {
+                row-gap: 3vh;
+                column-gap: 3vh;
+            }
+
+             aside {
+                height: 45vh;
+                width: 45vh;
+
+                &:hover{
+                    width: 50vh;
+                    height: 50vh;
+                    transition: .4s;
+                }
+            }
+        }
+
+        aside {
+            height: 60vh;
+            width: 60vh;
+        }
+
+        .recipe {
+ 
+            > figure {
+ 
+                > aside {
+                    height: 60vh;
+                    width: 60vh;
+                }
+            }
+
+            td {
+                font-size: 16px;
+            }
+ 
+            p {
+                font-size: 20px;
+            }
+ 
+ 
+            > article {
+                padding-top: 5vh;
+                row-gap: 3vh;
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: $fontFamily;
+    scroll-behavior: smooth;
+}
+
+body {
+    @include flexColumn;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}
