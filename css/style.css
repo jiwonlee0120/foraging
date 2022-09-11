@@ -125,7 +125,7 @@ main {
     color: whitesmoke;
   }
   .berries aside {
-    background-image: url("../berries.jpg");
+    background-image: url("../img/berries.jpg");
   }
   .berries > article {
     padding: 5%;
