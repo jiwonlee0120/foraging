@@ -96,7 +96,7 @@
       .gallery{
         figure {
           aside:nth-child(#{$i}){
-            background-image: url("/img/gallery-b-#{$i}.jpg");
+            background-image: url("../../img/gallery-b-#{$i}.jpg");
           }
         }
       }
@@ -210,13 +210,13 @@
       padding-top: 5vh;
   
        aside {
-        background-image: url("/img/mushroom-1.jpg");
+        background-image: url("../../img/mushroom-1.jpg");
        }
     }
   
     .second {
       aside {
-        background-image: url("/img/mushroom-2.jpg");
+        background-image: url("../../img/mushroom-2.jpg");
       }
     }
   
@@ -224,13 +224,13 @@
       padding-bottom: 5vh;
   
       aside {
-        background-image: url("/img/mushroom-3.jpg");
+        background-image: url("../../img/mushroom-3.jpg");
       }
     }
   
     .recipe {
       aside {
-        background-image: url("/img/toast.jpg");
+        background-image: url("../../img/toast.jpg");
         background-position: 60% 40%;
         height: 50vh;
       }

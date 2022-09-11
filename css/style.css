@@ -85,13 +85,13 @@ main {
     height: 60vh;
   }
   .carousel-inner > .carousel-item:first-child aside {
-    background-image: url(/img/carousel-01.jpg);
+    background-image: url("../img/carousel-01.jpg");
   }
   .carousel-inner > .carousel-item:nth-child(2) aside {
-    background-image: url(/img/carousel-02.jpg);
+    background-image: url("../img/carousel-02.jpg");
   }
   .carousel-inner > .carousel-item:last-child {
-    background-image: url(/img/carousel-03.jpg);
+    background-image: url("../img/carousel-03.jpg");
   }
   .carousel-inner .carousel-caption {
     display: block !important;
@@ -125,7 +125,7 @@ main {
     color: whitesmoke;
   }
   .berries aside {
-    background-image: url(/img/berries.jpg);
+    background-image: url("../berries.jpg");
   }
   .berries > article {
     padding: 5%;
@@ -142,7 +142,7 @@ main {
     color: whitesmoke;
   }
   .mushrooms aside {
-    background-image: url(/img/mushroom.jpg);
+    background-image: url("../img/mushroom.jpg");
   }
   .mushrooms > article {
     padding: 5%;
@@ -159,7 +159,7 @@ main {
     color: whitesmoke;
   }
   .plants aside {
-    background-image: url(/img/plant.jpg);
+    background-image: url("../img/plant.jpg");
   }
   .plants > article {
     padding: 5%;
@@ -176,7 +176,7 @@ main {
   .about aside {
     width: 100%;
     height: 40vh;
-    background-image: url(/img/about.jpg);
+    background-image: url("../img/about.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +213,7 @@ main {
   .contact aside {
     width: 100%;
     height: 40vh;
-    background-image: url(/img/location.jpg);
+    background-image: url("../img/location.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
